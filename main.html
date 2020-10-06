@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.1/markdown-it.min.js"></script>
 </head>
 <body>
-    <h1>WOWOWOWdefsdfOW</h1></body>
+<div style="display: flex;flex-direction: row;margin:2%">
+    <div style="width:50%;height:90vh;background-color:white;border:2px black solid;">
+        <textarea id="w3review" name="w3review" style="width:99%;height:89vh;" oninput="myFunction()">
+        </textarea>
+    </div>
+    <div style="width:50%;height:90vh;background-color: white;border:2px black solid;overflow-y: scroll;">
+        <p id="demo" style="font-size: 20px;"></p>
+    </div>
+</div>
+<script>
+    function myFunction() {
+        var x = document.getElementById("w3review").value;
+        var md = window.markdownit();
+        var result = md.render(x);
+        document.getElementById("demo").innerHTML =result;
+    }
+</script>
+</body>
+
 </html>
