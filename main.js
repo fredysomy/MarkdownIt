@@ -10,7 +10,8 @@ app.on('ready',()=>{
     mainwindow=new BrowserWindow({
         width: 1300,
         height: 800,
-        backgroundColor: '#2e2c29' 
+        backgroundColor: '#2e2c29',
+        title:"Markdown Editor" 
     });
     mainwindow.loadURL(url.format({
         pathname:path.join(__dirname,'main.html'),
