@@ -7,7 +7,11 @@ let mywindow;
 let mainwindow;
 
 app.on('ready',()=>{
-    mainwindow=new BrowserWindow({});
+    mainwindow=new BrowserWindow({
+        width: 1300,
+        height: 800,
+        backgroundColor: '#2e2c29' 
+    });
     mainwindow.loadURL(url.format({
         pathname:path.join(__dirname,'main.html'),
         protocol:'file:',
