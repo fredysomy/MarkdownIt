@@ -1,15 +1,19 @@
 {
-  "name": "electronjs",
-  "version": "1.0.0",
+  "name": "mardowneditor",
+  "version": "1.1.1",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "buildas":"electron-packager ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "electron": "^10.1.3"
+  },
+  "devDependencies": {
+    "electron-packager": "^15.1.0"
   }
 }
