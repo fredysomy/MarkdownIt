@@ -14,9 +14,9 @@
 <p align="center">
     <img src="https://img.shields.io/badge/MarkdownIt-v1.0.2-green"></img>
     <img src="https://img.shields.io/github/stars/fredysomy/MarkdownIt"></img>
-    <img src="https://img.shields.io/github/license/fredysomy/HealthApp"></img>
-    <img src="https://img.shields.io/github/forks/fredysomy/HealthApp"></img>
-    <img src="https://img.shields.io/github/issues/fredysomy/HealthApp"></img>
+    <img src="https://img.shields.io/github/license/fredysomy/MarkdownIt"></img>
+    <img src="https://img.shields.io/github/forks/fredysomy/MarkdownIt"></img>
+    <img src="https://img.shields.io/github/issues/fredysomy/MarkdownIt"></img>
 
     
     
