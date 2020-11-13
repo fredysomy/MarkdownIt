@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/1c9144b004.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.1/markdown-it.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/ace.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/theme-clouds.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/mode-less.js"></script>
+    <script type="text/javascript" src="../scripts/scriptsforsettings.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    
+</head>
+<style>
+        
+</style>
+<body id="color" style="background-color: #2e2c29;">
+   
+    <div id="menu-bar">
+        <div class="left" role="menu">
+          <img src="cd.png" id ="icon">
+          <h5  style="margin-top: 9px;" id="head">Settings</h5>
+        </div>
+        <div class="right">
+          
+          <button onclick="quitsettings()"  class="menubarr" id="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div >
+        <hr>
+        <hr>
+        <div id="aler" class="alert alert-danger" role="alert">
+          <h4 class="alert-heading">Note</h4>
+          <p id="work">Before you make changes in the Settings please make sure that you have saved your session.When you apply the changes the whole app refreshes to apply the changes.</p>
+          <hr>
+          <p id="work" class="mb-0">Please Save your work and change the settings . If saved please ignore this message</p>
+        </div>
+        <hr>
+        <hr>
+      <div class="form-group col-md-6" style="width:75%">
+       <h5>Theme for the editor</h5>
+        <select class="form-control" id="select1" style="margin-left:10px;">
+          <option id="a" value="xcode">xcode</option>
+          <option id="a"value="vibrant_ink">vibrant_ink</option>
+          <option id="a" value="twilight">twilight</option>
+          <option id="a"value="textmate">textmate</option>
+          <option id="a"value="monokai">monokai</option>
+          <option id="a" value="ambiance">ambiance</option>
+          <option id="a" value="chaos">chaos</option>
+          <option id="a" value="chrome">chrome</option>
+          <option id="a" value="clouds">clouds</option>
+          <option id="a" value="clouds_midnight">clouds_midnight</option>
+          <option id="a" value="cobalt">cobalt</option>
+          <option id="a" value="crimson_editor">crimson_editor</option>
+          <option id="a" value="dawn">dawn</option>
+          <option id="a" value="dracula">dracula</option>
+          <option id="a" value="dreamweaver">dreamweaver</option>
+          <option id="a" value="eclipse">eclipse</option>
+          <option id="a" value="github">github</option>
+          <option id="a" value="gob">gob</option>
+          <option id="a" value="gruvbox">gruvbox</option>
+          <option id="a" value="idle_fingers">idle_fingers</option>
+          <option id="a" value="merbivore">merbivore</option>
+          <option id="a" value="merbivore_soft">merbivore_soft</option>
+          <option id="a" value="nord_dark">nord_dark</option>
+          <option id="a" value="pastel_on_dark">pastel_on_dark</option>
+          <option id="a" value="solarized_dark">solarized_dark</option>
+          <option id="a" value="solarized_light">solarized_light</option>
+          <option id="a" value="terminal">terminal</option>
+          <option id="a" value="tomorrow">tomorrow</option>
+          <option id="a" value="tomorrow_night_eighties">tomorrow_night_eighties</option>
+          <option id="a" value="tomorrow_night_bright">tomorrow_night_bright</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6" style="width:75%">
+        <h5>Background Color</h5>
+          <input style="margin-left:10px;" type="color" id="bg">
+      </div>
+      <div class="form-group col-md-6" style="width:75%">
+        <h5>Text Color</h5>
+        <input style="margin-left:10px;" type="color" id="txt">
+    </div>
+    <div align="center">
+  <button id="bt" class="btn btn-primary" onclick="savesettings()">Save Changes</button>
+  <button  class="btn btn-primary" onclick="exitandreload()">Apply and Quit</button>
+</div>
+</div>
+</body>
+<script>
+</script>
+
+</html>

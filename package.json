@@ -1,19 +1,33 @@
 {
-  "name": "mardowneditor",
-  "version": "1.1.1",
-  "description": "",
+  "name": "mardownit",
+  "version": "1.0.2",
+  "description": "A Crossplatform Electron Application to live render Markdown. Can save the rendered file as Markdown,Html and Pdf.",
+  "productName": "MarkdownIt",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "buildas":"electron-packager ."
+    "buildas": "electron-packager .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=./icons/ico.icns --prune=true --out=build",
+    "package-win-64": "electron-packager . MarkdownIt --overwrite  --platform=win32 --arch=x64 --icon=./icons/cd.ico --prune=true --out=build --version-string.CompanyName=MarkdownIt --version-string.FileDescription=CE --version-string.ProductName=\"MarkdownIt\"",
+    "package-win-32": "electron-packager . MarkdownIt --overwrite  --platform=win32 --arch=ia32 --icon=./icons/cd.ico --prune=true --out=build --version-string.CompanyName=MarkdownIt --version-string.FileDescription=CE --version-string.ProductName=\"MarkdownIt\"",
+    "package-linux": "electron-packager . MarkdownIt --overwrite  --platform=linux --arch=x64 --icon=./icons/256x256.png --prune=true --out=build",
+    "run-all": "npm run package-win-32 && npm run package-win-64 && npm run package-linux && npm run package-mac",
+    "pruneit": "node-prune"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "markdown",
+    "markdownit",
+    "pdf",
+    "html",
+    "md"
+  ],
+  "author": "Fredy Somy",
   "license": "ISC",
   "dependencies": {
-    "electron": "^10.1.5"
+    "markdown-pdf": "^10.0.0"
   },
   "devDependencies": {
+    "electron": "^10.1.5",
     "electron-packager": "^15.1.0"
   }
 }

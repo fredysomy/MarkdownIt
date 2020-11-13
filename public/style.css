@@ -1,0 +1,113 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  #menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    background: #34475a;
+    -webkit-app-region: drag;
+  }
+  
+  #menu-bar > div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menubarr {
+    -webkit-app-region: no-drag;
+    outline: none !important;
+  }
+  .menubarr:active {
+        border-style: outset;
+        border: none;
+      
+  }
+ .container {
+    height: calc(100vh - 30px);
+    background: #34475ab0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  button {
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  
+  button:hover {
+    background: rgba(221, 221, 221, 0.2);
+  }
+  
+  #close-btn:hover {
+    background: rgb(255, 0, 0);
+  }
+  
+  button i {
+    color: white;
+  }
+  #icon{
+      width:37px;
+      height: 37px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  #head{
+    font-family: 'Poppins', sans-serif;
+  }
+  #editor { 
+    position: relative;
+    min-height: 100px;
+    font-size: 20px;
+  }
+     *{
+          color:white;
+      }
+      ::-webkit-scrollbar {width: 6px; height: 4px; background: #7c7b7b; }
+      ::-webkit-scrollbar-thumb { background-color: #000000; -webkit-border-radius: 2ex; }
+
+
+
+      #save{
+          margin:10px 5px;
+      }
+
+      #foot{
+        margin:0;
+        height:40px;
+        background-color: #34475a;
+        margin-bottom: 0;
+        bottom: 0px;
+        display:flex;
+        flex-direction: row;
+      }
+      .menubarr12{
+        margin-right: 0%;
+        margin-left: 2%;
+      }
+      #a{
+        color:black;
+      }
+      .alert-heading{
+        color:black;
+      }
+      #work{
+        color:black;
+      }
+      #aler{
+        margin:1%;
+      }

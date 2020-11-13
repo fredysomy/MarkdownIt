@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkdownIt</title>
+    <link rel="stylesheet" href="style.css" />
+    <script async type="text/javascript" src="../scripts/scripts.js"></script>
+    <script async type="text/javascript" src="../webhost/script.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/1c9144b004.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/11.0.1/markdown-it.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/ace.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/theme-clouds.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/mode-less.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/ace/1.2.3/noconflict/mode-less.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<style>
+</style>
+<body id="color" style="background-color: #2e2c29;">
+   <div id="menu-bar">
+        <div class="left" role="menu">
+          <img src="cd.png" id ="icon">
+          <h5  style="margin-top: 9px;" id="head">MarkdownIt</h5>
+        </div>
+        <div class="right">
+          <button  onclick="mini()" class="menubarr" id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
+          <button onclick="max()" class="menubarr" id="max-unmax-btn"><i class="far fa-square"></i></button>
+          <button onclick="quit()"  class="menubarr" id="close-btn"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+    <button class="btn btn-primary btn-sm" id="save" onclick="saveas()"><i class="fas fa-save"></i> SAVE AS</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="openfile()"><i class="fas fa-folder-open"></i> OPEN FILE</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="savepdf()"><i class="fas fa-file-pdf"></i> SAVE AS PDF</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="savehtml()"><i class="fab fa-html5"></i> SAVE AS HTML</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="givehelp()"><i class="fas fa-life-ring"></i> MARKDOWN HELP</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="publishsite()"><i class="fas fa-arrow-up"></i> PUBLISH</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="editcreatedsite()"><i class="fas fa-edit"></i> EDIT SITE</button>
+    <button class="btn btn-primary btn-sm" id="save" onclick="createsite()"><i class="fas fa-laptop-code"></i> CREATE SITE</button>
+<div style="display: flex;flex-direction: row;margin:2%;-webkit-app-region:no-drag;margin-top:0px;margin-bottom:0px;">
+    <div id="editor" style="width:50%;height:85vh;background-color:#454341;border:2px black solid;">
+    </div>
+    <div id="wer" style="width:50%;height:85vh;background-color: #454341;border:2px black solid;overflow-y: scroll;scrollbar-color: dark;-webkit-app-region:no-drag">
+        <p id="demo" style="font-size: 20px;"></p>
+    </div>
+</div>
+<div id="foot">
+  <button class="menubarr12"  onclick="openwindow()" id="close-btn-1"><i class="fas fa-cog"></i> Settings</button>
+  <button onclick="openlink('https://github.com/fredysomy/MarkdownIt')"class="menubarr12" ><i class="fab fa-github"></i> Source</button>
+ <button onclick="openlink('https://github.com/fredysomy/MarkdownIt/issues')" class="menubarr12" ><i class="fas fa-exclamation-triangle"></i> Issues</button>
+ <button onclick="openlink('https://markdownitweb.herokuapp.com/markdownit-8249')" class="menubarr12" ><i class="far fa-question-circle"></i> How to -Guide</button>
+ <p id="webname"></p>
+</div>
+</body>
+<script>
+var langTools = ace.require("ace/ext/language_tools");
+document.body.style.color=`${data.txt_color}`
+document.body.style.backgroundColor=`${data.bgcolor}`;
+document.getElementById("wer").style.backgroundColor=`${data.bgcolor}`;
+var editor = ace.edit("editor");
+editor.setTheme(`ace/theme/${data.code_editor_theme}`);
+editor.getSession().setMode("ace/mode/markdown");
+editor.setOptions({
+        enableBasicAutocompletion: true,
+        enableSnippets: true,
+        enableLiveAutocompletion: false
+    });
+//used the call the update function on change in the editor
+editor.getSession().on('change', function() {
+update()
+
+});
+    
+</script>
+
+</html>
