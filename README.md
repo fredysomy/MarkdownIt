@@ -10,6 +10,8 @@
 </p>
 
 # <h1 align=center>MarkdownIt</h1>
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffredysomy%2FMarkdownIt.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffredysomy%2FMarkdownIt?ref=badge_shield)
+
 #### <h5 align=center>A Efficent Code Editor to live render Markdown and Can save the rendered file as **Markdown**,**Html** and **Pdf** . Also Instant Hosting in The Web</h5>
 <p align="center">
     <img src="https://img.shields.io/badge/MarkdownIt-v1.0.2-green"></img>
@@ -70,6 +72,9 @@
 * Any bugs or queries can be mailed to [me](mailto:fredysomy@gmail.com)
 * All the "HOW to" guide is included [Here]()
 * `You can use Bootstrap styling inside the code you Write ( no need to inculde the scripts)`
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffredysomy%2FMarkdownIt.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffredysomy%2FMarkdownIt?ref=badge_large)
+
 ### How to use(Source code)
 <br>
 
