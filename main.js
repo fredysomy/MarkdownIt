@@ -253,3 +253,5 @@ ipcMain.on('getconfigfiles',(ev,arg)=>{
 ipcMain.on('publishedsuccesfully',(ev,arg)=>{
     succesfuldeploy(arg)
 })
+
+#Copyright © 2020,Fredy Somy
