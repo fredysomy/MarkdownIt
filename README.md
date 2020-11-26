@@ -4,7 +4,7 @@
       alt="Healthapp"
       src="https://github.com/fredysomy/electron-auto-update/blob/master/cd.png?raw=true"
       width="400"
-         height="400"
+         height="350"
     />
   </a>
 </p>
@@ -24,13 +24,13 @@
     
 </p>
 
-***
+
 
 <div align="center">
 <img src="https://drive.google.com/uc?export=view&id=1CWP-yFwqgy2HKbbHctxHbOW63hwJ4oqX" width=80%>
 </div>
 
-***
+
 
 <p align=center>
     <a href="#features">  Features</a>
