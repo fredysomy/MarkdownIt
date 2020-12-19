@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/github/forks/fredysomy/MarkdownIt"></img>
     <img src="https://img.shields.io/github/issues/fredysomy/MarkdownIt"></img>
     <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffredysomy%2FMarkdownIt.svg?type=shield"></img>
-
+    <img src="https://img.shields.io/github/downloads/fredysomy/MarkdownIt/total"></img>
     
     
 </p>
