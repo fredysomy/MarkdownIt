@@ -1,3 +1,6 @@
+// Scripts for rendering Markdown as html,pdf and for Manipulating Settings.json
+
+
 const df=require('fs')
 const pt=require('path')
 x=df.readFileSync(pt.join(__dirname,"../settings/settings.json"),"utf-8")
