@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://github.com/fredysomy/HealthApp">
+  <a href="https://markdownitweb.herokuapp.com/">
     <img
       alt="Healthapp"
-      src="https://github.com/fredysomy/electron-auto-update/blob/master/cd.png?raw=true"
+      src="https://markdownitweb.herokuapp.com/"
       width="400"
          height="350"
     />
