@@ -27,7 +27,7 @@
     "markdown-pdf": "^10.0.0"
   },
   "devDependencies": {
-    "electron": "^10.2.0",
+    "electron": "^11.5.0",
     "electron-packager": "^15.1.0"
   }
 }
